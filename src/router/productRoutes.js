@@ -17,6 +17,6 @@ router.get('/:productId', async (req, res) => {
       return
     }
   } catch (e) {
-    res.status(401).send({ status: 'FAILER', error: e.message })
+    res.status(401).send({ status: 'FAILED', error: e.message })
   }
 })
